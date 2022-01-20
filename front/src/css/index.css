@@ -119,3 +119,233 @@ nav .search input {
     font-size: 56px;
     text-transform: uppercase;
 }
+
+h4 {
+    text-transform: uppercase;
+}
+
+
+section.content#spotlight {
+    height: 60vh;
+}
+
+section.content#news {
+    height: 80vh;
+    padding: 0;
+}
+
+
+section.content#news .container#cards {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section.content#news .container#cards .card {
+    width: 350px;
+}
+
+section.content#news .container#cards .card img {
+    width: 100%;
+}
+
+section.content#news .container#cards .card .tags {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section.content#news .container#cards .card .tags .tag {
+    padding: 10px;
+    background-color: rgb(204, 203, 203);
+    margin-right: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+
+section.content#news .container#cards .card h6 {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: justify;
+    display: inline-block;
+}
+section.content#news .container#cards .card p {
+    margin-bottom: 20px;
+}
+
+section.content#news .container#cards .card a {
+    padding: 10px;
+    border: 2px solid #18c5a5;
+    color: #18c5a5;
+    font-weight: bold;
+}
+
+
+
+section.content#lee-jeffries {
+    height: 50vh;
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+section.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 40px 0px;
+}
+
+section.content .title, article {
+    width: 45%;
+}
+
+section.content .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20%;
+}
+
+section.content .title h4 {
+    margin: 0;
+    padding: 15px;
+    background-color: #18c5a5;
+    box-sizing: border-box;
+    color: white;
+}
+
+section.content .title hr {
+    width: 75%;
+    border-color: rgba(168, 168, 168, 0.486);
+}
+
+section.content article {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.content article .cover {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section.content article img {
+    height: 100%;
+}
+
+section.content article h5, section.content article h6
+{
+    position: absolute;
+}
+
+section.content article h5 {
+    margin: 0px 0px 300px 60px;
+    padding: 10px;
+    background-color: #18c5a5;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+section.content article h6 {
+    margin: 170px 0px 0px 60px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+section.content article aside {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+section.content article aside span {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+section#passionate {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/city.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+section#passionate p {
+    border: 1px solid yellow;
+    margin: 0;
+    padding: 7px;
+}
+
+section#passionate span {
+    border: 1px solid yellow;
+    background-color: yellow;
+    color: black;
+    padding: 7px;
+    font-weight: bold;
+}
+
+#lee-jeffries .container {
+    --s: 150px;  /* size  */
+    --m: 1px;   /* margin */
+    --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+.polygons {
+    width: 60%;
+}
+.poly {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s) * 1.1547);
+    display: inline-block;
+    font-size: initial; /* we reset the font-size if we want to add some content */
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin-bottom: calc(var(--m) - var(--s) * 0.2886); /* some negative margin to create overlap */
+}
+
+#marge {
+    margin-left: 80px;
+}
+.divers {
+    height: 30vh;
+    background-color: #dadada;
+}
+
+.sharing {
+    height: 10vh;
+    background-color: #58b6d0;
+}
+
+footer {
+    height: 35vh;
+    background-color: #333;
+}
