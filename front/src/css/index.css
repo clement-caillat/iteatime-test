@@ -335,17 +335,192 @@ section#passionate span {
 #marge {
     margin-left: 80px;
 }
-.divers {
-    height: 30vh;
+
+/* DIVERS */
+
+section.divers {
+    height: 40vh;
     background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-.sharing {
-    height: 10vh;
-    background-color: #58b6d0;
+section.divers .downloads, section.divers .newsletter {
+    height: 100%;
 }
+
+section.divers h5 {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    width: min-content;
+    background-color: #389bb3;
+    margin-bottom: 20px;
+}
+
+section.divers .downloads {
+    width: 50%;
+}
+
+section.divers .downloads .file {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section.divers .downloads .file img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+section.divers .newsletter {
+    width: 30%;    
+}
+section.divers .newsletter form {
+    width: 100%;
+}
+
+section.divers .newsletter form input, section.divers .newsletter form button {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+section.divers .newsletter form button {
+    width: 100%;
+    border: 2px solid #18c5a5;
+    background-color: transparent;
+    color: #18c5a5;
+    transition: background 250ms, color 250ms;
+    cursor: pointer;
+}
+
+section.divers .newsletter form button:hover {
+    background-color: #18c5a5;
+    color: white;
+}
+
+section.divers .newsletter form button:active {
+    background-color: #139980;
+    color: white;
+}
+
+section.divers .newsletter form input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+section.divers .newsletter form input[type="text"] {
+    width: 45%;
+}
+section.divers .newsletter form .wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ********* */
+
+/* SHARING */
+
+.sharing {
+    height: 13vh;
+    background-color: #58b6d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sharing .rss-card {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    transition: background 250ms;
+}
+.sharing .rss-card:hover{
+    background-color: #389bb3;
+}
+
+.sharing .rss-card img {
+    width: 50px;
+}
+
+/* ********* */
+
+/* FOOTER */
 
 footer {
     height: 35vh;
     background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    box-sizing: border-box;
 }
+
+footer .footer-section {
+    width: 17%;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background-color: red; */
+    height: 100%;
+    color: rgb(231, 231, 231);
+}
+
+footer .footer-section h6 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+footer .footer-section hr {
+    width: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: 4px;
+    border: none;
+    background-color: white;
+}
+
+footer .footer-section img {
+    width: 200px;
+}
+
+footer .footer-section ul
+{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 5px;
+}
+
+footer .footer-yt-link {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-yt-link img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+footer .btn-don {
+    padding: 10px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* ********* */
